@@ -12,7 +12,7 @@ public class MyThread extends Thread {
 
     @Override
     public void run() {
-        while (counter.getValue() != 100) {
+        while (counter.isFinish()) {
             counter.countUp();
             logger.info(Thread.currentThread().getName() + " value = " + counter.getValue());
         }
