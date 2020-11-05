@@ -1,8 +1,8 @@
 package thread;
 
 public class Counter {
-    private int value;
     private static final int NUMBER = 100;
+    private int value;
 
     public void countUp() {
         value++;
